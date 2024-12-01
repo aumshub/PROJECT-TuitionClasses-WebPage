@@ -235,6 +235,13 @@ nav h2 {
     gap: 1rem;
     padding: 1rem 1rem;
     text-align: justify;
+    position: relative;
+}
+.box img{
+    position: absolute;
+    width: 20%;
+    left: 0;
+    top: -15%;
 }
 
 
