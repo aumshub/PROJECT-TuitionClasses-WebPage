@@ -3,6 +3,8 @@
         height: 100px;
         width: 100%;
         padding: 0 6vw;
+        background-color: var(---background-color);
+        position: fixed;
         /* background-color: blue; */
     }
 
@@ -10,13 +12,22 @@
         display: none;
     }
 
-    .nav-pt2 i {
+    /* .nav-pt2 i {
         display: block;
         font-size: 5vw;
+    } */
+    @media (max-width: 600px) {
+        .nav-pt2 a {
+            display: none;
+        }
+    
+        .hamburger-menu {
+            display: block;
+        }
     }
 
-    nav h2 {
-        font-size: 6vw;
+    nav img {
+        transition: all ease-in 0.2s;
     }
     #page1 .content-pg1 {
         /* background-color: aqua; */
@@ -25,7 +36,7 @@
         display: flex;
         flex-direction: column;
         padding: 2vw 6vw;
-    
+       
     }
     
     .content-pg1 .left {
@@ -37,7 +48,7 @@
     .content-pg1 .left h1 {
         font-size: 6vw;
         font-weight: 600;
-        padding-top: 4vw;
+        margin-top: 7rem;
     }
     
     .content-pg1 .left p {
@@ -93,6 +104,8 @@
         width: 43vw;
         justify-self: flex-end;
     }
+
+   
 }
 
 @media (max-width: 600px) {
