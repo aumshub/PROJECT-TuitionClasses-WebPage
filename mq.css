@@ -1,6 +1,17 @@
+:root{
+    ---heading: 2rem;
+    ---pSize: 1rem;
+    --lineHeight: 1.3rem;
+}
+
+
 @media (max-width: 600px) {
+    
+    #page1{
+        height: 115%;
+    }
     nav {
-        height: 100px;
+        height: 70px;
         width: 100%;
         padding: 0 6vw;
         background-color: var(---background-color);
@@ -41,30 +52,29 @@
     
     .content-pg1 .left {
         width: 100%;
-        height: 50%;
+        height: auto;
         /* background-color: red; */
     }
     
     .content-pg1 .left h1 {
-        font-size: 6vw;
+        font-size: 2rem;
         font-weight: 600;
-        margin-top: 7rem;
+        padding-top: 5rem;
     }
     
     .content-pg1 .left p {
-       padding-top: 2vw;
-        font-size: 3vw;
         text-align: justify;
-        width: 70%;
         margin-top: 4vw;
-        line-height: 1.2rem;
+        line-height: 1.3rem;
+        font-size: 1rem;
+        width: 80%;
     }
 
     
     
     .content-pg1 .right {
         width: 100%;
-        height: 100%;
+        height: auto;
         /* background-color: black; */
     
     }
@@ -82,17 +92,17 @@
         /* background: rgb(183, 40, 40); */
         grid-column: 1 / 4;  /* This will make the box span across the three columns */
         grid-row: 1/2;
-        height: 100%;
+        height: 150%;
         width: 100%;  /* Increase width */
         justify-self: center;
-        margin-top: -2vw; 
+
     }
     .content-pg1 .box2 {
      /* background-color: blue; */
      grid-row: 2/4;
      height: 25vh;
      width: 43vw;
-     margin-top: 0;
+     margin-top: 3.5rem;
     }
     .content-pg1 .box3 {
         /* background-color: green; */
@@ -100,7 +110,7 @@
         grid-row-end: -1;
         grid-column: 3/4;
         height: 25vh;
-        margin-top: 0;
+        margin-top: 3.5rem;
         width: 43vw;
         justify-self: flex-end;
     }
@@ -110,9 +120,10 @@
 
 @media (max-width: 600px) {
     #page2 {
+        /* margin-top: 9rem; */
         height: auto;
         overflow: hidden;
-        margin-bottom: 2rem; /* Add space if needed */
+        /* margin-bottom: 2rem; Add space if needed */
     }
     
     #page2 .details-container{
@@ -129,7 +140,7 @@
         /* justify-content: space-around; */
         gap: 2rem;
         align-items: center;
-        padding: 0 2rem;
+        padding: 0 1rem;
         flex-direction: column;
         
     }
@@ -141,8 +152,12 @@
     #page2 .about-container p{
         height: auto;
         text-align: justify;
-        width: 90%;
-        line-height: 1.3rem;
+        width: 95%;
+        line-height:1.5rem;
+        font-size: var(---pSize);
+    }
+    #page2 .about-container h1{
+   font-size: var(---heading)
     }
     
      
@@ -152,12 +167,14 @@
     /* background-color: aqua; */
 }
 #page2 .whyus-container h1{
+    font-size: var(---heading);
     height: 80px;
     width: 100%;
     /* background-color: rgb(129, 132, 132); */
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 #page2 .whyus-container-boxes{
     height: auto;
@@ -172,7 +189,9 @@
     }
 
     #page2 .whyus-container-boxes .box p{
-        line-height: 1.3rem;
+        font-size: var(---pSize);
+        line-height: var(--lineHeight);
+
      }
 #page2 .whyus-container-boxes .box{
     height: 60%;
@@ -196,10 +215,11 @@ margin-top: 57rem;
 } */
 #page3 {
     height: auto;
-    margin-top: -2rem; /* Let the flow determine placement */
+    /* margin-top: -2rem; Let the flow determine placement */
     /* padding-top:-2rem; Add spacing as needed */
 }
 #page3 .whats-trending{
+   
     height: 50%;
     width: 100%;
     display: flex;
@@ -208,6 +228,7 @@ margin-top: 57rem;
     flex-direction: column;
 }
 #page3 .whats-trending h2{
+    font-size: var(---heading);
     height: 20%;
     display: flex;
     justify-content: center;
@@ -251,12 +272,15 @@ margin-top: 57rem;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+;
 
 }
 #page3 .our-champions h2{
+    font-size: var(---heading);
     height: auto;
     width: 100%;
    text-align: center; 
+   margin-bottom: 2rem;
 }
 /* #page3 .a-cont{
     height: 30%;
@@ -284,7 +308,7 @@ margin-top: 57rem;
     margin-top: 1rem;
 }
 #page3 .our-champions .our-champions-imgcont img{
-
+ /* border-radius: 2rem; */
  width: 75%;
 
 }
@@ -317,20 +341,24 @@ margin-top: 57rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
     align-items: center;
+    gap: 1.3rem;
 
 }
 #page4 .lower-grid-cont div{
   margin: auto;
-  border: 2px solid #dadada;
-width: 100%;
+  border: 0.5px solid #dadada;
+width: 50%;
 height: 100%;
 text-align: center;
 border-radius: 1rem;
 
+
 }
 #page4 .lower-grid-cont li{
+    font-size: var(---pSize);
+    line-height: var(--lineHeight);
    list-style: none;
-   padding-bottom: 1rem;
+   padding-bottom: 0.5rem;
 }
 #page4 .lower-grid-cont h3{
     padding-bottom: 1rem;
@@ -343,14 +371,16 @@ border-radius: 1rem;
     align-items: center;
     padding: 1rem;
     flex-direction: column;
-    gap:3rem;
+    gap:1rem;
+    color: grey;
 }
 #page4 footer svg{
     width: 1rem;
+    color: grey;
 }
 #page4 footer .social-links{
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 #page4 footer .social-links li{
    list-style: none;

@@ -8,7 +8,7 @@ let flag = true;
 
 function closeMenu() {
     console.log("Closing menu");
-    fullScr.style.top = "-100%";
+    fullScr.style.top = "-150%";
     navImg.style.opacity = "1";
     menu.classList.remove('active');
     console.log("Active class removed:", !menu.classList.contains('active'));

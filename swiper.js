@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
-            delay: 5000,  // 5 seconds
+            delay: 4000,  // 5 seconds
             disableOnInteraction: false,
             pauseOnMouseEnter: true
         },
