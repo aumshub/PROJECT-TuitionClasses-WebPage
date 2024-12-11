@@ -8,7 +8,7 @@
 }
 
 :root {
-    ---background-color: #FBFBFB;
+    ---background-color: linear-gradient(to left bottom, #5ffbf1, #46eefa, #41dfff, #52cffe, #69bff8, #69bff8, #69bff8, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     ---containers-color: #D4F6FF;
     ---border-radius: 1rem;
     ---sub-heading: 2.5rem;
@@ -29,15 +29,19 @@ body {
     height: 100%;
     width: 100%;
 }
-
+body{
+    overflow-x: hidden;
+}
 #page1 {
     height: 100%;
     width: 100%;
     position: relative;
-    background-color: var(---background-color);
+    background-image: var(---background-color);
+    color: white;
 }
 
 nav {
+
     height: 100px;
     width: 100%;
     padding: 0 4vw;
@@ -48,10 +52,12 @@ nav {
     align-items: center;
     position: relative;
     z-index: 100;
+    position: fixed;
+    background-color: white;
 }
 
 nav img {
-    height: 9vh;
+    height: 5rem;
 }
 
 .nav-pt2 {
@@ -61,21 +67,14 @@ nav img {
 
 }
 
-.nav-pt2 i {
-    font-size: 1.2vw;
-    font-weight: 3vw;
-    display: none;
-}
-
 .nav-pt2 a:nth-child(2) {
     margin: 0 1rem 0 0;
 }
 
 .nav-pt2 a {
-    font-size: 1.1vw;
     color: black;
     font-weight: 600;
-    font-size: var(---normal-heading);
+    font-size: 1.1rem;
     text-decoration: none;
     height: 2rem;
     width: 10rem;
@@ -83,6 +82,7 @@ nav img {
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
+
 
 }
 
@@ -93,6 +93,7 @@ nav img {
 }
 
 #page1 .content-pg1 {
+    
     /* background-color: aqua; */
     height: calc(100% - 100px);
     width: 100%;
@@ -102,20 +103,22 @@ nav img {
 }
 
 .content-pg1 .left {
+    margin-top: 9rem;
     width: 50%;
     height: 100%;
     /* background-color: red; */
 }
 
 .content-pg1 .left h1 {
+    
     font-family: mainfontbold;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 600;
-    margin-top: 3vw;
+
 }
 
 .content-pg1 .left p {
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     text-align: justify;
     width: 70%;
     margin-top: 2vw;
@@ -125,6 +128,7 @@ nav img {
 
 
 .content-pg1 .right {
+    margin-top: 6rem;
     width: 50%;
     height: 100%;
     /* background-color: black; */
@@ -185,7 +189,7 @@ nav img {
     height: 100%;
     width: 100%;
     position: relative;
-    background-color: var(---background-color);
+    background-image: var(---background-color);
 }
 
 #page2 .details-container {
@@ -204,6 +208,7 @@ nav img {
     gap: 1rem;
     align-items: center;
     padding: 2rem 2rem;
+    color: white;
 }
 
 #page2 .about-container img {
@@ -223,6 +228,7 @@ nav img {
 }
 
 #page2 .about-container h1 {
+    color: white;
     font-family: mainfontbold;
     text-align: center;
     width: 100%;
@@ -239,6 +245,7 @@ nav img {
 }
 
 #page2 .whyus-container h1 {
+    color: white;
     font-family: mainfontbold;
     height: 20%;
     width: 100%;
@@ -264,6 +271,7 @@ nav img {
 
 #page2 .whyus-container-boxes .box p {
     line-height: 1.3rem;
+    text-align:center;
 }
 
 #page2 .whyus-container-boxes .box {
@@ -285,7 +293,8 @@ nav img {
     position: absolute;
     width: 20%;
     left: 0;
-    top: -12%;
+    top: -28%;
+
 }
 
 
@@ -293,7 +302,7 @@ nav img {
     height: 100%;
     width: 100%;
     position: relative;
-    background-color: var(---background-color);
+    background-image: var(---background-color);
 }
 
 #page3 .whats-trending {
@@ -307,39 +316,40 @@ nav img {
 
 #page3 .whats-trending h2 {
     font-family: mainfontbold;
+    color: white;
     height: 20%;
     display: flex;
     justify-content: center;
     font-size: var(---sub-heading);
     align-items: flex-end;
+    margin-top: 1.7rem;
 }
 
 #page3 swiper-container {
     width: 100%;
-    height: 80%;
+    height: 95%;
     padding: 3rem;
     /* background-color: lightcoral; */
+
 
 }
 
 #page3 swiper-slide {
+
     text-align: center;
-    font-size: 18px;
+    /* font-size: 18px; */
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 1rem;
-}
-
-swiper-slide button-prev {
-    display: none;
+    border-radius: 2rem;
 }
 
 #page3 swiper-slide img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    border-radius: 2rem;
+    
 }
 
 #page3 .our-champions {
@@ -355,6 +365,7 @@ swiper-slide button-prev {
 }
 
 #page3 .our-champions h2 {
+    color: white;
     font-family: mainfontbold;
     height: auto;
     width: 100%;
@@ -395,12 +406,14 @@ swiper-slide button-prev {
     height: 100%;
     width: 25%;
     object-fit: contain;
+    border-radius: 2rem;
 }
 
 #page3 .our-champions .our-champions-imgcont img:nth-child(1) {
     width: 25%;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
+    border-radius: 5rem;
 }
 
 #page3 .our-champions .our-champions-imgcont img:nth-child(3) {
@@ -416,7 +429,7 @@ swiper-slide button-prev {
     display: flex;
     flex-direction: column;
     padding: 2rem 5rem;
-    background-color: var(---background-color);
+    background-image: var(---background-color);
 }
 
 #page4 .lower-grid-cont {
@@ -476,19 +489,20 @@ swiper-slide button-prev {
 #full-scr {
     height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.388);
-
+    background-color: rgba(255, 255, 255, 0.46);
+    background-clip: blur(20px);
     position: fixed;
     z-index: 99;
     top: -150%;
-    transition: all ease-in-out 0.8s;
+    transition: all ease-in-out 0.4s;
 }
 
 #full-div1 {
     height: 70%;
     width: 100%;
-    background-color: var(---background-color);
+   background-color: white;
     /* filter: blur(1rem); */
+   
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     display: flex;
@@ -520,6 +534,7 @@ swiper-slide button-prev {
     width: 30px;
     height: 25px;
     position: relative;
+
 }
 
 .hamburger-menu span {
@@ -530,6 +545,7 @@ swiper-slide button-prev {
     background: #000;
     border-radius: 3px;
     transition: all 0.3s ease;
+    z-index: 99;
 }
 
 .hamburger-menu span:nth-child(1) {
