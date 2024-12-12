@@ -1,3 +1,13 @@
+:root {
+    ---background-color: linear-gradient(to left bottom, #5ffbf1, #46eefa, #41dfff, #52cffe, #69bff8, #69bff8, #69bff8, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    ---containers-color: #D4F6FF;
+    ---border-radius: 1rem;
+    ---sub-heading: 2.5rem;
+    ---normal-heading: 1.1rem;
+    ---line-height: 2rem;
+}
+
+
 @font-face {
     font-family: mainfontregular;
     src: url(assets/fonts/Poppins-Regular.ttf);
@@ -7,14 +17,7 @@
     src: url(assets/fonts/Poppins-Bold.ttf);
 }
 
-:root {
-    ---background-color: linear-gradient(to left bottom, #5ffbf1, #46eefa, #41dfff, #52cffe, #69bff8, #69bff8, #69bff8, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    ---containers-color: #D4F6FF;
-    ---border-radius: 1rem;
-    ---sub-heading: 2.5rem;
-    ---normal-heading: 1.1rem;
-    ---line-height: 2rem;
-}
+
 
 * {
     margin: 0;
@@ -269,6 +272,10 @@ nav img {
     position: relative;
 }
 
+#page2 .whyus-container-boxes .box h2 {
+    font-weight: 800;
+    font-family: mainfontbold;
+}
 #page2 .whyus-container-boxes .box p {
     line-height: 1.3rem;
     text-align:center;

@@ -11,7 +11,7 @@
     }
 
     #page1 {
-        height: 130%;
+        height: 110%;
     }
 
     nav {
@@ -118,7 +118,7 @@
         grid-row: 2/4;
         height: 25vh;
         width: 43vw;
-        margin-top: 3.5rem;
+        margin-top: 4rem;
     }
 
     .content-pg1 .box3 {
@@ -127,7 +127,7 @@
         grid-row-end: -1;
         grid-column: 3/4;
         height: 25vh;
-        margin-top: 3.5rem;
+        margin-top: 4rem;
         width: 43vw;
         justify-self: flex-end;
     }
@@ -136,6 +136,17 @@
 }
 
 @media (max-width: 820px) {
+    .nav-pt2 a {
+        display: none;
+    }
+
+    .hamburger-menu {
+
+        /* background-color: red; */
+        display: block;
+        color: black;
+    }
+
     #page2 {
         /* margin-top: 9rem; */
         height: auto;
@@ -427,11 +438,15 @@ margin-top: 57rem;
     #page4 footer .social-links li {
         list-style: none;
     }
-
 }
 
 @media (max-width: 379px) {
     #page1 {
-        height: 130%;
+        height: 140%;
+    }
+}
+@media (max-width: 510px) {
+    #page1 {
+        height: 140%;
     }
 }

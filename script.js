@@ -111,7 +111,7 @@ let mm = gsap.matchMedia();
 
 mm.add("(min-width: 768px)", () => {
 
-    var tl = gsap.timeline();
+    // var tl = gsap.timeline();
 tl.from("#nav-bar",{
     y:-30,
     opacity:0,
